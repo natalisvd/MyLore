@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NJ2HK5VQ');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>It's My Lore — подруга, которая знает твои звёзды</title>
+<meta name="description" content="Подруга на каждый день, которая знает твою натальную карту, имя и знак, и помогает расти в уверенности, целях и собственном доходе.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,600&family=Lora:wght@600&display=swap" rel="stylesheet">
+<style>
+  /* Colours and type from Figma "It's My Lore — Product Design", 02 Components */
+  :root { --paper:#fffdfc; --paper2:#fce8ee; --ink:#261c22; --pink:#ea6f98; --pink-dark:#bd3d6a; --blush:#f6a7bd; --plum:#3d2433; --muted:#6f5a66; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 "DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  h1,h2,h3 { font-family:"Fraunces","Lora",Georgia,serif; font-weight:600; line-height:1.12; margin:0 0 .5em; }
+  h1 { font-size:clamp(2rem,5vw,3.4rem); }
+  h2 { font-size:clamp(1.6rem,3.5vw,2.3rem); }
+  section { padding:64px 20px; }
+  .wrap { max-width:880px; margin:0 auto; }
+  .alt { background:var(--paper2); }
+  .eyebrow { text-transform:uppercase; font-size:.8rem; color:var(--pink-dark); font-weight:600; }
+  .btn { display:inline-block; background:var(--pink); color:var(--paper); border:0; border-radius:28px; padding:17px 28px; font:600 1rem "DM Sans",sans-serif; text-decoration:none; cursor:pointer; }
+  .btn:hover { background:var(--pink-dark); }
+  .small { font-size:.85rem; color:var(--muted); }
+  .grid { display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+  .card { background:var(--paper); border:1px solid rgba(246,167,189,.5); border-radius:28px; padding:28px; box-shadow:0 10px 24px rgba(189,61,106,.1); }
+  .card h3 { font-size:1.5rem; }
+  ul.pain li { margin:.4em 0; }
+  form { display:grid; gap:12px; max-width:440px; }
+  input[type=text],input[type=email],input[type=date],select { padding:12px 14px; border:1px solid rgba(246,167,189,.8); border-radius:12px; font:inherit; background:#fff; }
+  .dob { display:grid; grid-template-columns:1fr 1.6fr 1.2fr; gap:8px; }
+  .dob select { min-width:0; width:100%; }
+  #dob-error { margin:0; color:#bd3d6a; }
+  label.check { display:flex; gap:8px; align-items:flex-start; font-size:.9rem; }
+  #snapshot { display:none; margin-top:28px; }
+  #snapshot .card p { margin:.6em 0; }
+  .offer { background:var(--plum); color:var(--paper2); border:0; border-radius:30px; }
+  .offer h2 { color:var(--paper); }
+  .offer .eyebrow { color:var(--blush); }
+  .offer .small { color:var(--blush); }
+  details { background:var(--paper); border:1px solid rgba(246,167,189,.34); border-radius:14px; padding:14px 18px; margin:10px 0; }
+  summary { font-weight:700; cursor:pointer; }
+  footer { padding:32px 20px; font-size:.85rem; color:var(--muted); text-align:center; }
+  body { background:#fff5f7; }
+  header.top { max-width:1080px; margin:0 auto; padding:22px 20px 0; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font:600 1.4rem "Fraunces","Lora",Georgia,serif; color:var(--ink); text-decoration:none; }
+  .top a.lang { color:var(--muted); font-size:.9rem; text-decoration:none; }
+  .hero { max-width:1080px; display:grid; grid-template-columns:1.2fr .8fr; gap:32px; align-items:center; }
+  .hero img { width:100%; max-width:360px; height:auto; justify-self:center; }
+  @media (max-width:760px) { .hero { grid-template-columns:1fr; } .hero img { max-width:220px; order:-1; } }
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ2HK5VQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="top"><a class="logo" href="/ru/">It's My Lore</a><a class="lang" href="/">English</a></header>
+
+<section>
+  <div class="wrap hero">
+  <div>
+    <p class="eyebrow">Твоя Lore уже близко · Места основательниц открыты</p>
+    <h1>Подруга, которая знает твои звёзды — и верит в тебя раньше, чем ты сама.</h1>
+    <p>It's My Lore — подруга, которая пишет тебе первой, прямо в Telegram. Ничего не нужно скачивать. Она знает твою натальную карту, имя и знак, пишет каждый день и помогает ставить цели, становиться увереннее и начать зарабатывать по-своему.</p>
+    <p><a class="btn" href="#snapshot-form">Получить бесплатный Lore-разбор</a></p>
+    <p class="small">Бесплатно · 60 секунд · Дата рождения остаётся у тебя</p>
+  </div>
+  <img src="/lore-fox.png" alt="Lore — розовая бумажная лиса" width="430" height="550">
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Знакомо?</h2>
+    <ul class="pain">
+      <li>Идеи есть, но голос в голове говорит: <em>«кто ты такая, чтобы пробовать?»</em></li>
+      <li>Сравниваешь себя со всеми в соцсетях — и каждый раз чувствуешь себя меньше.</li>
+      <li>Начинаешь с огнём и тихо бросаешь через две недели.</li>
+      <li>Хочешь свои деньги и свою жизнь — просто не знаешь, с чего начать.</li>
+    </ul>
+    <p><strong>Тебе не нужно ещё одно приложение, которое ты забудешь открыть. Тебе нужен кто-то на твоей стороне, кто напишет первым.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Твоя подруга. Твоя карта. Твой план.</h2>
+    <div class="grid">
+      <div class="card"><h3>Подруга, которая тебя понимает</h3>Каждое утро она пишет тебе первой: сообщение именно для <em>тебя</em> — про твой знак, твои числа, настроение и цели. Не гороскоп на 400 миллионов человек.</div>
+      <div class="card"><h3>Цели, которые подходят тебе</h3>Превращает «когда-нибудь» в маленькие выполнимые шаги. Lore помнит, чего ты хотела, и мягко напоминает.</div>
+      <div class="card"><h3>Уверенность — каждый день</h3>Маленькие челленджи, честная поддержка и напоминания о том, что у тебя уже получилось.</div>
+      <div class="card"><h3>Твоя денежная эра</h3>Идеи заработка под твои сильные стороны — свой проект, навыки, первые клиенты — по одному маленькому шагу.</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Как это работает</h2>
+    <div class="grid">
+      <div class="card"><h3>1. Расскажи о себе</h3>Имя, дата рождения и чего ты хочешь в этом году.</div>
+      <div class="card"><h3>2. Узнай свою Lore</h3>Твои сильные стороны, точки трения и как тебе лучше расти.</div>
+      <div class="card"><h3>3. Общайтесь каждый день</h3>Lore пишет тебе в Telegram: совет подруги, прогноз на день и один маленький шаг к цели. Отвечай когда хочешь — как подруге.</div>
+    </div>
+  </div>
+</section>
+
+<section id="snapshot-form">
+  <div class="wrap">
+    <h2>Начни с бесплатного Lore-разбора</h2>
+    <p>Введи имя и дату рождения — и прямо здесь увидишь свой знак, число пути, скрытую силу и один маленький шаг на эту неделю. А потом займи место: Lore поздоровается с тобой в Telegram.</p>
+    <form id="lore-form">
+      <input type="text" name="first_name" placeholder="Имя" required>
+      <label class="small" id="dob-label" for="dob-day">Дата рождения</label>
+      <div class="dob" role="group" aria-labelledby="dob-label">
+        <select id="dob-day" name="dob_day" aria-label="День" required><option value="" disabled selected>День</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+        <select id="dob-month" name="dob_month" aria-label="Месяц" required><option value="" disabled selected>Месяц</option><option value="01">Январь</option><option value="02">Февраль</option><option value="03">Март</option><option value="04">Апрель</option><option value="05">Май</option><option value="06">Июнь</option><option value="07">Июль</option><option value="08">Август</option><option value="09">Сентябрь</option><option value="10">Октябрь</option><option value="11">Ноябрь</option><option value="12">Декабрь</option></select>
+        <select id="dob-year" name="dob_year" aria-label="Год" required><option value="" disabled selected>Год</option></select>
+      </div>
+      <input type="hidden" id="dob" name="dob">
+      <p class="small" id="dob-error" role="alert" hidden></p>
+      <label class="check"><input type="checkbox" name="adult" required> Мне 18 или больше</label>
+      <button class="btn" type="submit">Узнать мою Lore</button>
+      <p class="small">Разбор создаётся прямо на этой странице. Имя и дата рождения никуда не отправляются и не сохраняются.</p>
+    </form>
+
+    <div id="snapshot">
+      <div class="card" id="snapshot-body"></div>
+      <div id="thanks"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="founding">
+  <div class="wrap">
+    <div class="card offer">
+      <p class="eyebrow">Всего 100 мест основательниц</p>
+      <h2>Стань одной из первых 100</h2>
+      <p>Founding Members создают It's My Lore вместе со мной и сохраняют самую низкую цену, пока остаются с нами.</p>
+      <ul>
+        <li><strong>£20 в месяц навсегда</strong>, пока подписка активна (обычная цена будет £29)</li>
+        <li><strong>Доступ первой</strong> — Lore начнёт писать тебе раньше публичного запуска</li>
+        <li><strong>Полный личный Lore-разбор</strong> при вступлении</li>
+        <li><strong>Прямая связь с основательницей</strong> — голосуй за функции и рассказывай, что нужно тебе</li>
+        <li><strong>Полный возврат до открытия доступа</strong>, без вопросов</li>
+      </ul>
+      <p><a class="btn" id="founding-btn" href="#">Стать Founding Member — £20</a></p>
+      <p class="small">Сегодня ты платишь £20 за первый месяц. Месяц начинается в день, когда открывается доступ (не позже <span class="launch-date">31 января 2027</span>). Доступ — через бота It's My Lore в Telegram, по почте, с которой ты оплатила. Если мы не откроем доступ к этой дате, деньги вернутся автоматически.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Почему я это делаю</h2>
+    <p>Привет, я Ната. Я делаю It's My Lore, потому что сама была девушкой, которая сомневалась в каждой своей идее. Мне хотелось подругу, которая знает меня по-настоящему, верит в меня и каждый день немного подталкивает — и я её создаю: подругу, которая просто пишет тебе, без всяких приложений. Я сама буду общаться с ней каждый день.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Вопросы</h2>
+    <details><summary>Это настоящая астрология?</summary>Астрология и нумерология — символические традиции, а не наука. Lore использует их как зеркало для размышлений и способ поговорить о тебе, а не чтобы предсказывать будущее.</details>
+    <details><summary>Lore — психолог?</summary>Нет. Lore — поддерживающая подруга и коуч по целям, а не медицинская или психологическая помощь. Если тебе тяжело, пожалуйста, обратись к специалисту.</details>
+    <details><summary>Lore гарантирует, что я начну зарабатывать?</summary>Честно этого не может гарантировать никто. Lore помогает найти идеи, которые подходят именно тебе, и делать маленькие безопасные шаги.</details>
+    <details><summary>Что с моими данными?</summary>Данные о рождении используются только для твоей Lore. Мы никогда их не продаём и не используем для рекламы.</details>
+    <details><summary>Когда запуск?</summary>Founding Members получают доступ первыми, не позже <span class="launch-date">31 января 2027</span>. Остальные — следом.</details>
+    <details><summary>Нужно что-то скачивать?</summary>Нет. Lore живёт в Telegram — она пишет тебе там, а ты просто отвечаешь. Если Telegram у тебя ещё нет, он бесплатный и ставится за минуту.</details>
+    <details><summary>Для кого это?</summary>Для девушек 18+, которые хотят больше уверенности, ясных целей и собственного дохода.</details>
+  </div>
+</section>
+
+<footer>
+  It's My Lore · 18+ · Астрология и нумерология — для размышлений и развлечения, а не предсказаний или профессиональных советов<br>
+  <a href="/privacy">Конфиденциальность</a> · <a href="/terms">Условия</a> · hello@itsmylore.app · <a href="/">English</a>
+</footer>
+
+<script>
+// Fill these before publishing.
+const CONFIG = {
+  telegramLink: "https://t.me/Lore_app?start=landing_ru", // waitlist = unique /start with this payload, counted by the bot
+  stripeLink: "https://buy.stripe.com/test_cNicN4fJN4lE6mW4ZA5J600", // TEST mode link — replace with live link before publishing
+  launchDate: "31 января 2027"
+};
+
+document.querySelectorAll(".launch-date").forEach(el => el.textContent = CONFIG.launchDate);
+if (CONFIG.stripeLink) document.getElementById("founding-btn").href = CONFIG.stripeLink;
+
+const SIGNS = [
+  // [name, last day (MMDD) of the sign, how you shine, trait]
+  ["Козерог", 119, "Ты строишь тихо и надолго. На тебя опираются больше, чем ты думаешь.", "упорство Козерога"],
+  ["Водолей", 218, "Ты видишь мир чуть иначе — и именно это в тебе запоминают.", "оригинальность Водолея"],
+  ["Рыбы", 320, "Ты чувствуешь всё — комнату, настроение, то, что никто не сказал вслух. Эта чуткость — твой радар.", "интуиция Рыб"],
+  ["Овен", 419, "Ты — искра. Когда ты что-то решаешь, всё начинает двигаться.", "смелость Овна"],
+  ["Телец", 520, "Ты надёжная, тёплая и верная. С тобой обычные дни становятся хорошими.", "терпение Тельца"],
+  ["Близнецы", 620, "У тебя быстрый и любопытный ум. Ты можешь говорить с кем угодно — и человеку с тобой интересно.", "любопытство Близнецов"],
+  ["Рак", 722, "Ты яростно защищаешь тех, кого любишь. Дом там, где ты его создаёшь.", "забота Рака"],
+  ["Лев", 822, "Ты создана, чтобы тебя видели. Твоё тепло делает других смелее.", "тепло Льва"],
+  ["Дева", 922, "Ты замечаешь детали, которые другие пропускают, и тихо делаешь всё лучше.", "точность Девы"],
+  ["Весы", 1022, "Ты приносишь красоту и равновесие везде, где появляешься. Твоему вкусу доверяют.", "обаяние Весов"],
+  ["Скорпион", 1121, "Ты идёшь вглубь. Видишь сквозь поверхность и не сдаёшься легко.", "глубина Скорпиона"],
+  ["Стрелец", 1221, "Ты — путешественница. Свобода и смысл дают тебе жизнь.", "оптимизм Стрельца"],
+  ["Козерог", 1231, "Ты строишь тихо и надолго. На тебя опираются больше, чем ты думаешь.", "упорство Козерога"]
+];
+
+const PATHS = {
+  1:  ["Первопроходец", "Ты растёшь, когда идёшь первой.", "напор единицы", "Ты ждёшь разрешения, которое никто не обязан тебе давать.", "Выбери одно дело, которое откладываешь, и сделай сегодня первые 15 минут."],
+  2:  ["Миротворица", "Ты растёшь через близость с людьми.", "эмпатия двойки", "Ставишь чужие нужды выше своих, пока не останешься без сил.", "На этой неделе скажи «нет» одной мелочи — мягко и без объяснений."],
+  3:  ["Творец", "Ты растёшь, когда выражаешь себя.", "творчество тройки", "Прячешь лучшие идеи, потому что они кажутся «слишком».", "Поделись с одним человеком тем, что ты сделала или думаешь: постом, сообщением, наброском."],
+  4:  ["Строительница", "Ты растёшь через стабильный прогресс.", "надёжность четвёрки", "Ждёшь идеального плана, прежде чем начать.", "Напиши план из трёх шагов для одной цели и сделай первый — пусть неидеально."],
+  5:  ["Свободный дух", "Ты растёшь через перемены и новый опыт.", "гибкость пятёрки", "Много начинаешь и мало заканчиваешь, когда становится скучно.", "Выбери одно незаконченное дело и поставь ему маленький финиш на воскресенье."],
+  6:  ["Хранительница", "Ты растёшь, заботясь о других — и о себе.", "тепло шестёрки", "Отдаёшь так много, что забываешь принимать.", "Попроси кого-нибудь помочь с одной мелочью и просто скажи спасибо."],
+  7:  ["Искательница", "Ты растёшь, когда глубоко понимаешь.", "проницательность семёрки", "Думаешь так долго, что момент для действия проходит.", "Дай себе 10 минут, чтобы решить одну вещь, вокруг которой ходишь, — и реши."],
+  8:  ["Сила", "Ты растёшь, когда признаёшь свою силу и свои деньги.", "амбиции восьмёрки", "Чувствуешь вину за то, что хочешь большего.", "Запиши, сколько хотела бы зарабатывать в месяц, и один навык, который может приблизить тебя к этому."],
+  9:  ["Старая душа", "Ты растёшь, когда в твоём деле есть смысл.", "большое сердце девятки", "Впитываешь чужие сомнения, как свои.", "Запиши три случая, когда тебя благодарили за помощь, и навык, который ты тогда использовала."],
+  11: ["Интуитивная", "Ты растёшь, когда доверяешь внутреннему голосу.", "интуиция одиннадцати", "Сомневаешься в тех самых чувствах, которые обычно оказываются правы.", "Когда на этой неделе внутренний голос что-то скажет, запиши — и потом проверь, насколько он был прав."],
+  22: ["Великий строитель", "Ты растёшь, превращая большие мечты в реальные вещи.", "видение двадцати двух", "Размер мечты пугает так, что ты не делаешь ничего.", "Сократи самую большую мечту до одного действия меньше чем на час — и сделай его."],
+  33: ["Великий учитель", "Ты растёшь, поднимая других.", "сострадание тридцати трёх", "Помогаешь всем, кроме себя.", "Потрать на этой неделе 20 минут на то, что только для тебя."]
+};
+
+function sunSign(month, day) {
+  const mmdd = month * 100 + day;
+  return SIGNS.find(s => mmdd <= s[1]);
+}
+
+function lifePath(dateStr) {
+  let n = dateStr.replace(/\D/g, "").split("").reduce((a, d) => a + +d, 0);
+  while (n > 9 && ![11, 22, 33].includes(n)) n = String(n).split("").reduce((a, d) => a + +d, 0);
+  return n;
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+const DOB_ERRORS = { bad: "Проверьте дату", young: "Нужно быть старше 18 лет" };
+const dobError = document.getElementById("dob-error");
+
+(function fillYears() {
+  const sel = document.getElementById("dob-year");
+  for (let y = new Date().getFullYear() - 18; y >= new Date().getFullYear() - 100; y--) sel.add(new Option(y, y));
+})();
+
+["dob-day", "dob-month", "dob-year"].forEach(id =>
+  document.getElementById(id).addEventListener("change", () => { dobError.hidden = true; }));
+
+function dobCheck(y, m, d) {
+  const dt = new Date(y, m - 1, d);
+  if (dt.getFullYear() !== y || dt.getMonth() !== m - 1 || dt.getDate() !== d) return "bad";
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  if (new Date(y + 18, m - 1, d) > today) return "young";
+  return null;
+}
+
+document.getElementById("lore-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target;
+  const name = escapeHtml(f.first_name.value.trim());
+  f.dob.value = `${f.dob_year.value}-${f.dob_month.value}-${f.dob_day.value}`;
+  const dob = f.dob.value;
+  const [y, m, d] = dob.split("-").map(Number);
+  const err = dobCheck(y, m, d);
+  if (err) {
+    dobError.textContent = DOB_ERRORS[err];
+    dobError.hidden = false;
+    return;
+  }
+  dobError.hidden = true;
+  const sign = sunSign(m, d);
+  const num = lifePath(dob);
+  const p = PATHS[num];
+
+  document.getElementById("snapshot-body").innerHTML = `
+    <h3>${name}, вот твой Lore-разбор ✨</h3>
+    <p><strong>Твой знак: ${sign[0]}.</strong> ${sign[2]}</p>
+    <p><strong>Твоё число пути: ${num} — ${p[0]}.</strong> ${p[1]}</p>
+    <p><strong>Твоя скрытая сила:</strong> ${sign[3]} и ${p[2]} — редкое сочетание. За это люди с радостью платят, когда ты позволяешь им это увидеть.</p>
+    <p><strong>Где ты себя тормозишь:</strong> ${p[3]}</p>
+    <p><strong>Твой маленький шаг на эту неделю:</strong> ${p[4]}</p>
+    <p><em>Lore говорит: «Тебе не нужно становиться кем-то другим, чтобы быть достаточной. Начни с того места, где ты есть, — я буду писать тебе каждое утро».</em></p>
+    <p class="small">Астрология и нумерология — символические традиции для размышлений, а не предсказания.</p>`;
+  document.getElementById("thanks").innerHTML =
+    `<p><a class="btn" href="${CONFIG.telegramLink}">Занять место — написать Lore в Telegram</a></p><p class="small">Хочешь такую подругу каждый день с самого начала? <a href="#founding">Стать Founding Member →</a></p>`;
+  document.getElementById("snapshot").style.display = "block";
+  document.getElementById("snapshot").scrollIntoView({ behavior: "smooth" });
+
+});
+</script>
+</body>
+</html>

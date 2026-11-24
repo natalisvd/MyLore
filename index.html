@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NJ2HK5VQ');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>It's My Lore — a best friend who knows your stars</title>
+<meta name="description" content="A daily companion who knows your birth chart, your name and your sign — and helps you grow your confidence, your goals and your own income.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+  /* Colours and type from Figma "It's My Lore — Product Design", 02 Components */
+  :root { --paper:#fffdfc; --paper2:#fce8ee; --ink:#261c22; --pink:#ea6f98; --pink-dark:#bd3d6a; --blush:#f6a7bd; --plum:#3d2433; --muted:#6f5a66; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 "DM Sans",system-ui,sans-serif; }
+  h1,h2,h3 { font-family:"Fraunces",Georgia,serif; font-weight:600; line-height:1.12; margin:0 0 .5em; }
+  h1 { font-size:clamp(2rem,5vw,3.4rem); }
+  h2 { font-size:clamp(1.6rem,3.5vw,2.3rem); }
+  section { padding:64px 20px; }
+  .wrap { max-width:880px; margin:0 auto; }
+  .alt { background:var(--paper2); }
+  .eyebrow { text-transform:uppercase; font-size:.8rem; color:var(--pink-dark); font-weight:600; }
+  .btn { display:inline-block; background:var(--pink); color:var(--paper); border:0; border-radius:28px; padding:17px 28px; font:600 1rem "DM Sans",sans-serif; text-decoration:none; cursor:pointer; }
+  .btn:hover { background:var(--pink-dark); }
+  .small { font-size:.85rem; color:var(--muted); }
+  .grid { display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+  .card { background:var(--paper); border:1px solid rgba(246,167,189,.5); border-radius:28px; padding:28px; box-shadow:0 10px 24px rgba(189,61,106,.1); }
+  .card h3 { font-size:1.5rem; }
+  ul.pain li { margin:.4em 0; }
+  form { display:grid; gap:12px; max-width:440px; }
+  input[type=text],input[type=email],input[type=date],select { padding:12px 14px; border:1px solid rgba(246,167,189,.8); border-radius:12px; font:inherit; background:#fff; }
+  .dob { display:grid; grid-template-columns:1fr 1.6fr 1.2fr; gap:8px; }
+  .dob select { min-width:0; width:100%; }
+  #dob-error { margin:0; color:#bd3d6a; }
+  label.check { display:flex; gap:8px; align-items:flex-start; font-size:.9rem; }
+  #snapshot { display:none; margin-top:28px; }
+  #snapshot .card p { margin:.6em 0; }
+  .offer { background:var(--plum); color:var(--paper2); border:0; border-radius:30px; }
+  .offer h2 { color:var(--paper); }
+  .offer .eyebrow { color:var(--blush); }
+  .offer .small { color:var(--blush); }
+  details { background:var(--paper); border:1px solid rgba(246,167,189,.34); border-radius:14px; padding:14px 18px; margin:10px 0; }
+  summary { font-weight:700; cursor:pointer; }
+  footer { padding:32px 20px; font-size:.85rem; color:var(--muted); text-align:center; }
+  body { background:#fff5f7; }
+  header.top { max-width:1080px; margin:0 auto; padding:22px 20px 0; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font:600 1.4rem "Fraunces","Lora",Georgia,serif; color:var(--ink); text-decoration:none; }
+  .top a.lang { color:var(--muted); font-size:.9rem; text-decoration:none; }
+  .hero { max-width:1080px; display:grid; grid-template-columns:1.2fr .8fr; gap:32px; align-items:center; }
+  .hero img { width:100%; max-width:360px; height:auto; justify-self:center; }
+  @media (max-width:760px) { .hero { grid-template-columns:1fr; } .hero img { max-width:220px; order:-1; } }
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ2HK5VQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="top"><a class="logo" href="/">It's My Lore</a><a class="lang" href="/ru/">Русский</a></header>
+
+<section>
+  <div class="wrap hero">
+  <div>
+    <p class="eyebrow">Your Lore is coming · Founding spots open</p>
+    <h1>A best friend who knows your stars — and believes in you before you do.</h1>
+    <p>It's My Lore is a friend who messages you first — right in Telegram. Nothing new to download. She knows your birth chart, your name and your sign, texts you every day, and helps you set goals, grow your confidence and start earning on your own terms.</p>
+    <p><a class="btn" href="#snapshot-form">Get my free Lore Snapshot</a></p>
+    <p class="small">Free · 60 seconds · Your birth date stays private</p>
+  </div>
+  <img src="/lore-fox.png" alt="Lore, a pink paper fox" width="430" height="550">
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Sound familiar?</h2>
+    <ul class="pain">
+      <li>You have ideas, but a voice in your head says <em>who are you to try?</em></li>
+      <li>You compare yourself to everyone online and come out smaller every time.</li>
+      <li>You start things with fire and quietly drop them two weeks later.</li>
+      <li>You want your own money and your own life — you just don't know where to begin.</li>
+    </ul>
+    <p><strong>You don't need another app you'll forget to open. You need someone in your corner who texts you first.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Your friend. Your chart. Your plan.</h2>
+    <div class="grid">
+      <div class="card"><h3>A friend who gets you</h3>Every morning she texts you first: a message written for <em>you</em> — your sign, your numbers, your mood, your goals. Not a horoscope for 400 million people.</div>
+      <div class="card"><h3>Goals that fit who you are</h3>Turn "one day" into small, doable steps. Lore remembers what you said you wanted and gently holds you to it.</div>
+      <div class="card"><h3>Confidence, practised daily</h3>Little challenges, honest pep talks and reminders of what you've already done.</div>
+      <div class="card"><h3>Your money era</h3>Ideas for earning that match your strengths — side projects, skills, first clients — one small step at a time.</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card"><h3>1. Tell Lore about you</h3>Your name, birth date and what you want this year.</div>
+      <div class="card"><h3>2. Get your Lore</h3>Your strengths, your friction points and how you grow best.</div>
+      <div class="card"><h3>3. Chat every day</h3>Lore texts you in Telegram: a friend's advice, a daily forecast and one small step towards your goal. Reply any time, like you would to a friend.</div>
+    </div>
+  </div>
+</section>
+
+<section id="snapshot-form">
+  <div class="wrap">
+    <h2>Start with your free Lore Snapshot</h2>
+    <p>Enter your name and birth date and see your sign, your Life Path number, your hidden strength and one small step for this week — right now, on this page. Then save your place: Lore will say hi in Telegram.</p>
+    <form id="lore-form">
+      <input type="text" name="first_name" placeholder="First name" required>
+      <label class="small" id="dob-label" for="dob-day">Date of birth</label>
+      <div class="dob" role="group" aria-labelledby="dob-label">
+        <select id="dob-day" name="dob_day" aria-label="Day" required><option value="" disabled selected>Day</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+        <select id="dob-month" name="dob_month" aria-label="Month" required><option value="" disabled selected>Month</option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select>
+        <select id="dob-year" name="dob_year" aria-label="Year" required><option value="" disabled selected>Year</option></select>
+      </div>
+      <input type="hidden" id="dob" name="dob">
+      <p class="small" id="dob-error" role="alert" hidden></p>
+      <label class="check"><input type="checkbox" name="adult" required> I'm 18 or over</label>
+      <button class="btn" type="submit">Reveal my Lore</button>
+      <p class="small">Your Snapshot is created right here on this page. Your name and birth date are not sent or stored anywhere.</p>
+    </form>
+
+    <div id="snapshot">
+      <div class="card" id="snapshot-body"></div>
+      <div id="thanks"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="founding">
+  <div class="wrap">
+    <div class="card offer">
+      <p class="eyebrow">Only 100 founding spots</p>
+      <h2>Be one of the first 100</h2>
+      <p>Founding Members shape It's My Lore with me and keep the lowest price for as long as they stay.</p>
+      <ul>
+        <li><strong>£20/month, locked in</strong> while you stay subscribed (regular price will be £29)</li>
+        <li><strong>First access</strong> — Lore starts texting you before the public launch</li>
+        <li><strong>A full personal Lore reading</strong> when you join</li>
+        <li><strong>A direct line to the founder</strong> — vote on features and tell us what you need</li>
+        <li><strong>Full refund before your access starts</strong>, no questions asked</li>
+      </ul>
+      <p><a class="btn" id="founding-btn" href="#">Become a Founding Member — £20</a></p>
+      <p class="small">You pay £20 today for your first month. Your month starts the day you get access (no later than <span class="launch-date">31 January 2027</span>). You'll get access through the It's My Lore bot in Telegram, linked by the email you paid with. If we don't open access by then, you get a full refund automatically.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Why I'm building this</h2>
+    <p>Hi, I'm Nata. I'm building It's My Lore because I've been the girl who doubted every idea she had. I wanted a friend who knew me deeply, believed in me and nudged me every single day — so I'm making one — a friend who simply texts you, no app to install. I'll be chatting with her myself, every day.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details><summary>Is this real astrology?</summary>Astrology and numerology are symbolic traditions, not science. Lore uses them as a mirror for reflection and a way to talk about you — not to predict your future.</details>
+    <details><summary>Is Lore a therapist?</summary>No. Lore is a supportive friend and a goal coach, not a medical or mental-health service. If you're struggling, please reach out to a professional.</details>
+    <details><summary>Can Lore guarantee I'll earn money?</summary>No one honestly can. Lore helps you find ideas that fit you and take small, safe steps.</details>
+    <details><summary>What happens to my data?</summary>Your birth details are used only to create your Lore. We never sell them or use them for advertising.</details>
+    <details><summary>When does it launch?</summary>Founding Members get access first, no later than <span class="launch-date">31 January 2027</span>. Waitlist members hear next.</details>
+    <details><summary>Do I need to download anything?</summary>No. Lore lives in Telegram — she messages you there, and you just reply. If you don't have Telegram yet, it's free and takes a minute to install.</details>
+    <details><summary>Who is it for?</summary>Women 18+ who want more confidence, clearer goals and their own income.</details>
+  </div>
+</section>
+
+<footer>
+  It's My Lore · For ages 18+ · Astrology and numerology are for reflection and entertainment, not prediction or professional advice<br>
+  <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · hello@itsmylore.app · <a href="/ru/">Русский</a>
+</footer>
+
+<script>
+// Fill these before publishing.
+const CONFIG = {
+  telegramLink: "https://t.me/Lore_app?start=landing_en", // waitlist = unique /start with this payload, counted by the bot
+  stripeLink: "https://buy.stripe.com/test_cNicN4fJN4lE6mW4ZA5J600", // TEST mode link — replace with live link before publishing
+  launchDate: "31 January 2027"
+};
+
+document.querySelectorAll(".launch-date").forEach(el => el.textContent = CONFIG.launchDate);
+if (CONFIG.stripeLink) document.getElementById("founding-btn").href = CONFIG.stripeLink;
+
+const SIGNS = [
+  // [name, last day (MMDD) of the sign, how you shine, trait]
+  ["Capricorn", 119, "You build quietly and you build to last. People lean on you more than you realise.", "Capricorn grit"],
+  ["Aquarius", 218, "You see the world a little differently — and that difference is exactly what people remember.", "Aquarius originality"],
+  ["Pisces", 320, "You feel everything — the room, the mood, the thing nobody said out loud. That sensitivity is your radar.", "Pisces intuition"],
+  ["Aries", 419, "You're the spark. When you decide something, things start moving.", "Aries courage"],
+  ["Taurus", 520, "You're steady, sensual and loyal. You make ordinary days feel good.", "Taurus patience"],
+  ["Gemini", 620, "Your mind is quick and curious. You can talk to anyone and make them feel interesting.", "Gemini curiosity"],
+  ["Cancer", 722, "You protect the people you love fiercely. Home is wherever you make it.", "Cancer care"],
+  ["Leo", 822, "You were made to be seen. Your warmth makes other people brave.", "Leo warmth"],
+  ["Virgo", 922, "You notice the details others miss and you make things better, quietly.", "Virgo precision"],
+  ["Libra", 1022, "You bring beauty and balance wherever you go. People trust your taste.", "Libra charm"],
+  ["Scorpio", 1121, "You go deep. You see through surfaces and you don't give up easily.", "Scorpio depth"],
+  ["Sagittarius", 1221, "You're the adventurer. Freedom and meaning keep you alive.", "Sagittarius optimism"],
+  ["Capricorn", 1231, "You build quietly and you build to last. People lean on you more than you realise.", "Capricorn grit"]
+];
+
+const PATHS = {
+  1:  ["the Pioneer", "You grow by going first.", "a 1's drive", "You wait for permission nobody needs to give you.", "Pick one thing you've been putting off and do the first 15 minutes of it today."],
+  2:  ["the Peacemaker", "You grow through connection.", "a 2's empathy", "You put everyone's needs before your own until you're running on empty.", "Say no to one small thing this week — kindly, without explaining."],
+  3:  ["the Creator", "You grow by expressing yourself.", "a 3's creativity", "You hide your best ideas because they feel 'too much'.", "Share one thing you made or think — a post, a message, a sketch — with one person."],
+  4:  ["the Builder", "You grow through steady progress.", "a 4's reliability", "You wait for the perfect plan before you start.", "Write a three-step plan for one goal and do step one, even imperfectly."],
+  5:  ["the Free Spirit", "You grow through change and new experiences.", "a 5's adaptability", "You start a lot and finish little when things get boring.", "Choose one unfinished thing and give it a tiny finish line for Sunday."],
+  6:  ["the Nurturer", "You grow by caring for others — and yourself.", "a 6's warmth", "You give so much that you forget to receive.", "Ask someone for help with one small thing and simply say thank you."],
+  7:  ["the Seeker", "You grow by understanding deeply.", "a 7's insight", "You overthink until the moment to act has passed.", "Give yourself 10 minutes to decide one thing you've been circling — then decide."],
+  8:  ["the Powerhouse", "You grow by claiming your power and your money.", "an 8's ambition", "You feel guilty for wanting more.", "Write down how much you'd love to earn a month — and one skill that could get you closer."],
+  9:  ["the Old Soul", "You grow by giving meaning to what you do.", "a 9's big heart", "You soak up other people's doubts as if they were your own.", "Write down three times someone thanked you for helping them, and the skill you used each time."],
+  11: ["the Intuitive", "You grow by trusting your inner voice.", "an 11's intuition", "You doubt the very instincts that are usually right.", "Next time your gut says something this week, write it down — and check back later how right it was."],
+  22: ["the Master Builder", "You grow by turning big dreams into real things.", "a 22's vision", "The size of your dreams scares you into doing nothing.", "Shrink your biggest dream to one action that takes under an hour, and do it."],
+  33: ["the Master Teacher", "You grow by lifting others up.", "a 33's compassion", "You help everyone except yourself.", "Spend 20 minutes this week on something that's only for you."]
+};
+
+function sunSign(month, day) {
+  const mmdd = month * 100 + day;
+  return SIGNS.find(s => mmdd <= s[1]);
+}
+
+function lifePath(dateStr) {
+  let n = dateStr.replace(/\D/g, "").split("").reduce((a, d) => a + +d, 0);
+  while (n > 9 && ![11, 22, 33].includes(n)) n = String(n).split("").reduce((a, d) => a + +d, 0);
+  return n;
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+const DOB_ERRORS = { bad: "Please enter a real date", young: "You must be 18 or older" };
+const dobError = document.getElementById("dob-error");
+
+(function fillYears() {
+  const sel = document.getElementById("dob-year");
+  for (let y = new Date().getFullYear() - 18; y >= new Date().getFullYear() - 100; y--) sel.add(new Option(y, y));
+})();
+
+["dob-day", "dob-month", "dob-year"].forEach(id =>
+  document.getElementById(id).addEventListener("change", () => { dobError.hidden = true; }));
+
+function dobCheck(y, m, d) {
+  const dt = new Date(y, m - 1, d);
+  if (dt.getFullYear() !== y || dt.getMonth() !== m - 1 || dt.getDate() !== d) return "bad";
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  if (new Date(y + 18, m - 1, d) > today) return "young";
+  return null;
+}
+
+document.getElementById("lore-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target;
+  const name = escapeHtml(f.first_name.value.trim());
+  f.dob.value = `${f.dob_year.value}-${f.dob_month.value}-${f.dob_day.value}`;
+  const dob = f.dob.value;
+  const [y, m, d] = dob.split("-").map(Number);
+  const err = dobCheck(y, m, d);
+  if (err) {
+    dobError.textContent = DOB_ERRORS[err];
+    dobError.hidden = false;
+    return;
+  }
+  dobError.hidden = true;
+  const sign = sunSign(m, d);
+  const num = lifePath(dob);
+  const p = PATHS[num];
+
+  document.getElementById("snapshot-body").innerHTML = `
+    <h3>${name}, here's your Lore Snapshot ✨</h3>
+    <p><strong>Your sign: ${sign[0]}.</strong> ${sign[2]}</p>
+    <p><strong>Your Life Path: ${num} — ${p[0]}.</strong> ${p[1]}</p>
+    <p><strong>Your hidden strength:</strong> ${sign[3]} plus ${p[2]} is a rare mix — it's something people would happily pay for once you let them see it.</p>
+    <p><strong>Where you hold yourself back:</strong> ${p[3]}</p>
+    <p><strong>Your small step this week:</strong> ${p[4]}</p>
+    <p><em>Lore says: "You don't have to become someone else to be enough. Start where you are — I'll text you every morning."</em></p>
+    <p class="small">Astrology and numerology are symbolic traditions for reflection, not predictions.</p>`;
+  document.getElementById("thanks").innerHTML =
+    `<p><a class="btn" href="${CONFIG.telegramLink}">Save my place — say hi to Lore in Telegram</a></p><p class="small">Want a friend like this every day from the start? <a href="#founding">Become a Founding Member →</a></p>`;
+  document.getElementById("snapshot").style.display = "block";
+  document.getElementById("snapshot").scrollIntoView({ behavior: "smooth" });
+
+});
+</script>
+</body>
+</html>
