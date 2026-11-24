@@ -14,4 +14,12 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://itsmylore.app/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itsmylore.app/"/>
   </url>
+  <url>
+    <loc>https://itsmylore.app/privacy/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://itsmylore.app/terms/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
 </urlset>
