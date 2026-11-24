@@ -60,11 +60,12 @@
 <section>
   <div class="wrap hero">
   <div>
-    <p class="eyebrow">Your Lore is coming · Founding spots open</p>
+    <p class="eyebrow">Your Lore is here · 2 days free</p>
     <h1>A best friend who knows your stars — and believes in you before you do.</h1>
     <p>It's My Lore is a friend who messages you first — right in Telegram. Nothing new to download. She knows your birth chart, your name and your sign, texts you every day, and helps you set goals, grow your confidence and start earning on your own terms.</p>
     <p><a class="btn" href="#snapshot-form">Get my free Lore Snapshot</a></p>
     <p class="small">Free · 60 seconds · Your birth date stays private</p>
+    <p class="small">Then 1000⭐ (~£10) / 30 days, paid inside Telegram with Stars.</p>
   </div>
   <img src="/lore-fox.png" alt="Lore, a pink paper fox" width="430" height="550">
   </div>
@@ -122,7 +123,7 @@
       <p class="small" id="dob-error" role="alert" hidden></p>
       <label class="check"><input type="checkbox" name="adult" required> I'm 18 or over</label>
       <button class="btn" type="submit">Reveal my Lore</button>
-      <p class="small">Your Snapshot is created right here on this page. Your name and birth date are not sent or stored anywhere.</p>
+      <p class="small">Your Snapshot is created right here on this page. Your name and birth date go only to Lore in Telegram, and only if you tap “Save my place”.</p>
     </form>
 
     <div id="snapshot">
@@ -132,21 +133,19 @@
   </div>
 </section>
 
-<section class="alt" id="founding">
+<section class="alt" id="pricing">
   <div class="wrap">
     <div class="card offer">
-      <p class="eyebrow">Only 100 founding spots</p>
-      <h2>Be one of the first 100</h2>
-      <p>Founding Members shape It's My Lore with me and keep the lowest price for as long as they stay.</p>
+      <p class="eyebrow">One simple price</p>
+      <h2>2 days free, then 1000⭐ (~£10) / 30 days</h2>
+      <p>Say hi to Lore in Telegram and the first 2 days are on us. If you want to keep going, subscribe for 30 days at a time.</p>
       <ul>
-        <li><strong>£20/month, locked in</strong> while you stay subscribed (regular price will be £29)</li>
-        <li><strong>First access</strong> — Lore starts texting you before the public launch</li>
-        <li><strong>A full personal Lore reading</strong> when you join</li>
-        <li><strong>A direct line to the founder</strong> — vote on features and tell us what you need</li>
-        <li><strong>Full refund before your access starts</strong>, no questions asked</li>
+        <li><strong>Pay inside Telegram with Stars</strong> — no card details on this site, no extra accounts</li>
+        <li><strong>A free 2-day trial</strong> starts as soon as you say hi</li>
+        <li><strong>Cancel any time</strong> in Telegram's payment settings</li>
       </ul>
-      <p><a class="btn" id="founding-btn" href="#">Become a Founding Member — £20</a></p>
-      <p class="small">You pay £20 today for your first month. Your month starts the day you get access (no later than <span class="launch-date">31 January 2027</span>). You'll get access through the It's My Lore bot in Telegram, linked by the email you paid with. If we don't open access by then, you get a full refund automatically.</p>
+      <p><a class="btn" href="https://t.me/Lore_app?start=landing_en">Say hi to Lore in Telegram</a></p>
+      <p class="small">~£10 is approximate: Telegram shows the exact price in Stars before you confirm.</p>
     </div>
   </div>
 </section>
@@ -165,7 +164,7 @@
     <details><summary>Is Lore a therapist?</summary>No. Lore is a supportive friend and a goal coach, not a medical or mental-health service. If you're struggling, please reach out to a professional.</details>
     <details><summary>Can Lore guarantee I'll earn money?</summary>No one honestly can. Lore helps you find ideas that fit you and take small, safe steps.</details>
     <details><summary>What happens to my data?</summary>Your birth details are used only to create your Lore. We never sell them or use them for advertising.</details>
-    <details><summary>When does it launch?</summary>Founding Members get access first, no later than <span class="launch-date">31 January 2027</span>. Waitlist members hear next.</details>
+    <details><summary>How much does it cost?</summary>The first 2 days are free. Then it's 1000⭐ (~£10) / 30 days, paid inside Telegram with Telegram Stars. You can cancel any time in Telegram's payment settings.</details>
     <details><summary>Do I need to download anything?</summary>No. Lore lives in Telegram — she messages you there, and you just reply. If you don't have Telegram yet, it's free and takes a minute to install.</details>
     <details><summary>Who is it for?</summary>Women 18+ who want more confidence, clearer goals and their own income.</details>
   </div>
@@ -173,19 +172,18 @@
 
 <footer>
   It's My Lore · For ages 18+ · Astrology and numerology are for reflection and entertainment, not prediction or professional advice<br>
-  <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · hello@itsmylore.app · <a href="/ru/">Русский</a>
+  © 2026 Rubyness Ltd · Company No. <a href="https://find-and-update.company-information.service.gov.uk/company/SC729112" rel="noopener">SC729112</a><br>
+  <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:natali@rubyness.co.uk">natali@rubyness.co.uk</a> · <a href="/ru/">Русский</a>
 </footer>
 
 <script>
 // Fill these before publishing.
 const CONFIG = {
   telegramLink: "https://t.me/Lore_app?start=landing_en", // waitlist = unique /start with this payload, counted by the bot
-  stripeLink: "https://buy.stripe.com/test_cNicN4fJN4lE6mW4ZA5J600", // TEST mode link — replace with live link before publishing
   launchDate: "31 January 2027"
 };
 
 document.querySelectorAll(".launch-date").forEach(el => el.textContent = CONFIG.launchDate);
-if (CONFIG.stripeLink) document.getElementById("founding-btn").href = CONFIG.stripeLink;
 
 const SIGNS = [
   // [name, last day (MMDD) of the sign, how you shine, trait]
@@ -232,6 +230,19 @@ function lifePath(dateStr) {
 
 function escapeHtml(s) {
   return s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+// Telegram /start payload for the bot: landing_en_snapshot_<b64> where <b64> = unpadded URL-safe base64 of the
+// UTF-8 string "<name>:<YYYY-MM-DD>" (18+ is confirmed by the required checkbox). Telegram allows 64 chars of
+// [A-Za-z0-9_-], so the name is shortened until it fits.
+function snapshotLink(name, dob) {
+  const prefix = "landing_en_snapshot_";
+  const b64 = str => btoa(String.fromCharCode(...new TextEncoder().encode(str)))
+    .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const chars = [...name.replace(/[:\s]+/g, " ").trim()];
+  let enc;
+  while ((enc = b64(chars.join("") + ":" + dob)).length > 64 - prefix.length) chars.pop();
+  return "https://t.me/Lore_app?start=" + prefix + enc;
 }
 
 const DOB_ERRORS = { bad: "Please enter a real date", young: "You must be 18 or older" };
@@ -282,7 +293,7 @@ document.getElementById("lore-form").addEventListener("submit", e => {
     <p><em>Lore says: "You don't have to become someone else to be enough. Start where you are — I'll text you every morning."</em></p>
     <p class="small">Astrology and numerology are symbolic traditions for reflection, not predictions.</p>`;
   document.getElementById("thanks").innerHTML =
-    `<p><a class="btn" href="${CONFIG.telegramLink}">Save my place — say hi to Lore in Telegram</a></p><p class="small">Want a friend like this every day from the start? <a href="#founding">Become a Founding Member →</a></p>`;
+    `<p><a class="btn" href="${snapshotLink(f.first_name.value, dob)}">Save my place — say hi to Lore in Telegram</a></p><p class="small">2 days free · <a href="#pricing">See the price →</a></p>`;
   document.getElementById("snapshot").style.display = "block";
   document.getElementById("snapshot").scrollIntoView({ behavior: "smooth" });
 
